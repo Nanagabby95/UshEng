@@ -79,7 +79,7 @@ font-size: 14px;
     height: 100%;
     text-align: center;
     margin-bottom: 5em;
-    white-space: nowrap;
+    /* white-space: nowrap; */
 }
 
 .div-hero-container-primary h3{
@@ -120,8 +120,8 @@ font-size: 14px;
 
 .small-btn{ 
     position: relative;
-    top:120px;
-    right: 75px;
+    top:73px;
+    right: 50px;
     padding: 15px 20px;
     background-color: #4E6BE6;
     border: none;
@@ -174,9 +174,12 @@ hr{
 .div-hero-container-secondary{
     display: flex;
     flex-direction: row;
+    justify-content: center;
     text-align: center;
     align-items: center;
-    justify-content: center;  
+    width: 100%;
+    height: 100%;  
+    padding: 0 20px;
 }
 
 .div-hero-container-secondary h4{
@@ -195,11 +198,12 @@ hr{
     align-items: center;
     width: 100%;
     height: 100%;
+    padding: 0 20px;
 }
 .text-content{
-    padding: 0 20px;
+    padding: 0;
     height: 100%;
-    margin: 1em 4em;
+    width: 100%;
 }
 
 .text-content p{
@@ -211,7 +215,8 @@ hr{
 .div-hero-sec-text-content{
     padding: 0 20px;
     height: 100%;
-    margin: 1em 3em;
+    width: 100%;
+    margin: 1em;
 }
 
 .div-hero-sec-text-content p{
@@ -235,6 +240,7 @@ hr{
     align-items: center;
     width: 100%;
     height: 100%;
+    padding: 0 20px;
 }
 
 
@@ -246,6 +252,7 @@ hr{
     justify-content: center;
     width: 100%;
     height: 100%;
+    padding: 0 20px;
 }
 
 .div-about-container-last{
@@ -256,6 +263,7 @@ hr{
     justify-content: center;
     width: 100%;
     height: 100%;
+    padding: 0 20px;
     
 }
 
@@ -468,8 +476,8 @@ hr{
     }
 
     .header-container div button{
-        position: absolute;
-        left: 100px;
+        position: relative;
+        left: 120px;
         z-index: 1;
     }
     .regbtn-header{
@@ -500,9 +508,6 @@ hr{
         margin: 0 1em;
         white-space: nowrap;
     }
-    /* .text-container-content{  
-        margin: 0 1em;
-    } */
 
     .div-hero-primary-content p{
         font-size: 15px;
@@ -540,7 +545,6 @@ hr{
       
     }
     .div-about-container-primary p{
-        white-space: nowrap;
         text-align: justify;
         
     }
@@ -567,7 +571,6 @@ hr{
         height: 100%;
     }
     .div-about-container-secondary p{
-        white-space: nowrap;
         text-align: justify;
         align-items: center;
     }
@@ -585,7 +588,6 @@ hr{
         height: 100%;
     }
     .div-about-container-tertiary p{
-        white-space: nowrap;
         text-align: justify;
         align-items: center;
     }
@@ -604,7 +606,6 @@ hr{
         height: 100%;
     }
     .div-about-container-last p{
-        white-space: nowrap;
         text-align: justify;
         align-items: center;
     }
@@ -635,10 +636,7 @@ hr{
     }
 
     .small-btn{
-        position: relative;
-        top:420px;
-        left: 155px;
-        font-size: 14px;
+        display: none;
     }
     .div-footer-container #align-frame .paragraph{
         padding: 0 15px !important;
@@ -684,7 +682,129 @@ hr{
     }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
+
+@media only screen and (max-width: 768px){
+    .header-container div button{
+        position: absolute;
+        left: 100px;
+        z-index: 2;
+    }
+    .regbtn-header{
+        padding: 20px 40px;
+    }
+    .hero-container-secondary-img{
+        width: 100%;
+        margin:0;
+    }
+    .small-btn{
+        position: relative;
+        top:70px;
+        right: 5px;
+        font-size: 14px;
+    }
+
+    .hero-container-secondary-img img{
+        width: 300px;
+    }
+
+
+
+    .div-about-container {
+        display: flex;
+        flex-direction: column;
+      }
+
+
+    .div-shape-wrapper{
+        width: 100%;
+        height: 100%;
+        margin-left: 0;
+        gap: 0;
+        padding: 10px 0;
+    }
+    .div-about-container-primary{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
+        text-align: center;
+        padding: 5px 10px;
+    }
+    .text-content{
+        margin: 0;
+        padding: 10px;
+    }
+    .text-content .div{
+        padding: 10px 0;
+    }
+    .div-about-container-primary .text-content{
+        padding: 0;
+    }
+    
+    .div-about-container-primary > div:last-child {
+        order: -1;
+      }
+   
+    .div-about-container-tertiary > div:last-child {
+        order: -1;
+      }
+    .div-about-container-secondary{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding:10px;
+    }
+
+    .div-about-container-secondary div{
+        padding: 10px;
+    }
+
+   
+    .div-about-container-tertiary{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding:10px;
+    }
+
+    .div-about-container-tertiary div{
+        padding: 10px;
+    }
+
+    .div-about-container-last{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding:10px;
+    }
+
+    .div-about-container-last div{
+        padding: 10px;
+    }
+    .div-footer-container #align-frame {
+        padding: 0 20px;
+    }
+    .footer-img{
+        width: 100vw;
+        height: 400px;
+    } 
+    .div-footer-img-text{
+        color: white;
+        position: absolute;
+        bottom: 510px;
+        left: 100px;
+        
+    }
+
+   
+
+
+}
+
+@media only screen and (min-width: 1023px) and (max-width: 1200px) {
     
 
     .header-container{
@@ -722,11 +842,7 @@ hr{
     .div-hero-container{
          width: 100%;
     }
-    .div-hero-container-primary{
-        /* width: 100%; */
-        white-space: nowrap;
-        
-    }
+   
     .div-hero-container-secondary{
         width: 100%;
         display: flex;
@@ -739,9 +855,11 @@ hr{
         width: 100%;
     }
 
-    .text-container-content {
+    .text-container-content  {
         text-align: justify;
         font-size: 12px;
+        align-items: center;
+        text-align: center;
     }
 
     .hero-container-secondary-img{
@@ -765,7 +883,10 @@ hr{
     .div-about-container-primary{
         display: flex;
         flex-direction: row;
-        margin: 0;
+    }
+
+    .div-hero-container-primary .div-hero-primary-content h4{
+       padding: 0 20px;
     }
 
 
@@ -811,6 +932,10 @@ hr{
 
     .frame{
         font-size: 30px;
+    }
+
+    .div-footer-container #align-frame {
+        padding: 0 20px;
     }
   
     .div-footer-img-text{
