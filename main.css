@@ -79,6 +79,7 @@ font-size: 14px;
     height: 100%;
     text-align: center;
     margin-bottom: 5em;
+    padding: 0 20px;
     /* white-space: nowrap; */
 }
 
@@ -179,7 +180,7 @@ hr{
     align-items: center;
     width: 100%;
     height: 100%;  
-    padding: 0 20px;
+    /* padding: 0 5px; */
 }
 
 .div-hero-container-secondary h4{
@@ -505,12 +506,15 @@ hr{
     }
 
     .div-hero-primary-content{
-        margin: 0 1em;
-        white-space: nowrap;
+        margin: 0;
+        padding: 0 20px;
+        text-align: center;
+        /* white-space: nowrap; */
     }
 
     .div-hero-primary-content p{
         font-size: 15px;
+        padding: 0 10px;
     }
 
     .div-hero-container-secondary{
@@ -546,6 +550,8 @@ hr{
     }
     .div-about-container-primary p{
         text-align: justify;
+        align-items: center;
+        
         
     }
       .div-about-container-primary > div:last-child {
@@ -647,9 +653,8 @@ hr{
     .div-footer-img-text{
         color: white;
         position: absolute;
-        bottom: 600px;
-        left: 500px;
-        
+        bottom: 700px;
+        left: 400px;   
     }
 
     hr{
@@ -886,7 +891,7 @@ hr{
     }
 
     .div-hero-container-primary .div-hero-primary-content h4{
-       padding: 0 20px;
+       padding: 0 15px;
     }
 
 
