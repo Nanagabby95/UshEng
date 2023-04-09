@@ -443,7 +443,71 @@ hr{
   .div-footer-paragraph{
     margin: 2em;
   }
+/* The overlay */
+.div-overlay-reg-form {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000da; /* Semi-transparent black background */
+  }
 
+  .wrapper p{
+    font-weight: bold;
+    font-size: 16px !important;
+  }
+  
+  /* The modal container */
+  .div-overlay-reg-form .wrapper {
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 40%;
+  }
+  
+  /* The form container */
+  /* .div-overlay-reg-form .form-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  } */
+  
+  /* Form input styles */
+  .div-overlay-reg-form form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .div-overlay-reg-form form input[type="text"],
+  .div-overlay-reg-form form input[type="email"],
+  .div-overlay-reg-form form input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+  }
+  
+  /* Form button styles */
+  .div-overlay-reg-form form button[type="submit"] {
+    background-color: rgb(36, 36, 230);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .div-overlay-reg-form form button[type="submit"]:hover {
+    background-color: green;
+  }
+  
 
 
 
@@ -692,7 +756,7 @@ hr{
     .header-container div button{
         position: absolute;
         left: 100px;
-        z-index: 2;
+        z-index: 1;
     }
     .regbtn-header{
         padding: 20px 40px;
