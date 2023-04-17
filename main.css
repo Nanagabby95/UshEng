@@ -10,7 +10,14 @@ body{
 
 .container{
     position: relative;
+    /* overflow: auto; */
+}
+
+.container-fluid {
+    position: relative;
     overflow: auto;
+    padding: none !important;
+    margin: none !important;
 }
 
 .container p{
@@ -135,13 +142,14 @@ font-size: 14px;
     font-size: 500;
     color: #414141;
 }
-hr{
-    color: #4E6BE6;
-    border: 2px solid;
-    width: 600px;
-    margin: 2em auto;
 
+hr{
+    color: #4E6BE6 !important;
+    border: 2px solid !important;
+    width: 600px !important;
+    margin: 2em auto !important;
 }
+
 .frame{
     width: 60px;
 }
@@ -214,10 +222,9 @@ hr{
    text-align: justify;
 }
 .div-hero-sec-text-content{
-    padding: 0 20px;
+    padding: 0;
     height: 100%;
     width: 100%;
-    margin: 1em;
 }
 
 .div-hero-sec-text-content p{
@@ -321,20 +328,20 @@ hr{
 .div-shape-wrapper{
     height: 100%;
     padding: 0 10px;
-    margin-left: 350px;
+    /* margin-left: 350px; */
 }
 
 .shape{
     width: 200px;   
 }
 
-.div-footer-img-text {
+/* .div-footer-img-text {
     color: white;
     position: absolute;
     bottom: 550px;
     left: 450px;
     
-}
+} */
 
 .div-footer-img-text p{
     color: white;
@@ -405,11 +412,11 @@ hr{
   }
   
   input[type="text"],
-  input[type="number"],
-  input[type="email"] {
+  input[type="tel"],
+  input[type="email"], select{
     display: block;
     width: 100%;
-    padding: 10px;
+    padding: 5px;
     border-radius: 4px;
     border: 1px solid #224879;
     margin-bottom: 10px;
@@ -429,7 +436,7 @@ hr{
     background-color: #0069d9;
   }
 
-  form button{
+  div button{
     display: block;
     margin: 20px auto;
     padding: 10px 40px;
@@ -461,20 +468,12 @@ hr{
   
   /* The modal container */
   .div-overlay-reg-form .wrapper {
-    /* display: flex; */
     justify-content: center;
     align-items: center;
     height: 100%;
     width: 40%;
   }
   
-  /* The form container */
-  /* .div-overlay-reg-form .form-container {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
-  } */
   
   /* Form input styles */
   .div-overlay-reg-form form label {
@@ -714,12 +713,7 @@ hr{
         text-align: justify;
         white-space: normal;
     }
-    .div-footer-img-text{
-        color: white;
-        position: absolute;
-        bottom: 700px;
-        left: 400px;   
-    }
+   
 
     hr{
         color: #4E6BE6;
@@ -749,6 +743,23 @@ hr{
     .regbtn-footer{
         padding: 15px 30px;
     }
+    .div-overlay-reg-form {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100%;
+        background: #fff;
+        z-index: 999;
+      }
+      .div-overlay-reg-form .wrapper {
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100vw;
+      }
+      
+    
 }
 
 
@@ -1041,4 +1052,76 @@ hr{
     
   }
 
+  .__notification {
+    display: none;
+    outline: 2px solid black;
+  
+  }
+  .__notification.alert-danger {
+    background: "#e40000" !important;
+  }
 
+
+.infinite {
+    animation-iteration-count: infinite;
+   
+  }
+
+ion-icon {
+    font-size: 30px;
+  }
+
+  .container{
+    width: 1200px !important;
+    height: 100% !important;
+}
+.otp-form {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100%;
+	background-color: rgba(0,0,0,0.5);
+	z-index: 999;
+}
+
+.otp-form-content {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	background-color: black;
+	padding: 20px;
+	border-radius: 5px;
+}
+
+.close-btn{
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	font-size: 20px;
+	background: none;
+	border: none;
+	cursor: pointer;
+    color: black;
+}
+
+.otp-form label{
+    width: 50vw !important;
+}
+.otp-form input{
+    width: 30vw !important;
+}
+.testimonial-header{ 
+    color: blue !important;
+    -webkit-text-stroke:  blue !important;
+
+}
+
+.testimonial-active {
+    color: blue !important;
+}
+
+
+  
